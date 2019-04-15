@@ -1,6 +1,7 @@
+import { environment } from '../../environments/environment';
+
 export class AppConstants {
-    //public static API_BASE_URL: string = 'https://localhost:3000';
-    public static API_BASE_URL: string = 'https://192.168.0.7:3000';
+    public static API_BASE_URL: string = environment.API_BASE_URL;
     public static MSGS: object = {
         ERROR: 'Something went wrong, please try again after some time',
         KEYWORD_MISSING: 'Please enter keyword(s)',
